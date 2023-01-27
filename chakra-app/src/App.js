@@ -25,8 +25,8 @@ function App() {
       <NavBar/>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/blogs" element={<Blogs/>} />
+        <Route path="/text" element={<About/>} />
+        <Route path="/buttons" element={<Blogs/>} />
       </Routes>
     </Router>
     </ChakraProvider>

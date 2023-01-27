@@ -6,7 +6,7 @@ import FAIcons, { FaFacebook } from "react-icons/fa"
 const Blogs = () => {
     return (
         <>
-            <h1>Welcome to the Blogs Page</h1>
+            <h1>Welcome to the Buttons Page</h1>
 
             {/* Creating a button */}
             <Button colorScheme="blue">
