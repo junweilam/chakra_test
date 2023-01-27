@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Button, ButtonGroup } from "@chakra-ui/react";
-import FAIcons, { FaFacebook } from "react-icons/fa"
+import { Button } from "@chakra-ui/react";
+import { FaFacebook, FaTelegram, FaTwitter } from "react-icons/fa"
 
 const Blogs = () => {
     return (
@@ -21,6 +21,16 @@ const Blogs = () => {
             {/* Facebook button */}
             <Button colorScheme="facebook" leftIcon={<FaFacebook/>}>
                 Facebook
+            </Button>
+
+            {/* Twitter button */}
+            <Button colorScheme="twitter" leftIcon={<FaTwitter/>}>
+                Twitter
+            </Button>
+
+            {/* Telegram button */}
+            <Button colorScheme="telegram" leftIcon={<FaTelegram/>}>
+                Telegram
             </Button>
         </>
     );
