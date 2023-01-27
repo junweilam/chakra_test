@@ -1,15 +1,19 @@
 import React from "react";
 
+import { Text } from '@chakra-ui/react';
+
 const About = () => {
     return(
+        
         <div>
-            <h1>
+            <Text as='b' fontSize="50px">
                 Welcome to About Page
-            </h1>
+            </Text>
             <p>
                 This is the about page
             </p>
         </div>
+       
     );
 };
 

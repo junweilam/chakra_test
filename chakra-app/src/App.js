@@ -6,8 +6,21 @@ import About from "./pages/about";
 import Blogs from "./pages/blogs";
 import Home from "./pages";
 
+import { extendTheme, ChakraProvider } from "@chakra-ui/react";
+
+const colors={
+  brand:{
+    900: '#F8FF00',
+    800: '#000000',
+    700: '#000000',
+  },
+}
+
+const theme = extendTheme({colors});
+
 function App() {
   return (
+    <ChakraProvider theme={theme}>
     <Router>
       <NavBar/>
       <Routes>
@@ -16,6 +29,7 @@ function App() {
         <Route path="/blogs" element={<Blogs/>} />
       </Routes>
     </Router>
+    </ChakraProvider>
   );
 }
 
